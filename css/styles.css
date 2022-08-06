@@ -1,0 +1,128 @@
+/***************************************************************/
+                        /* IMPORTS */
+/***************************************************************/
+
+/* FONTS */
+/* 'Plus Jakarta Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+
+
+/***************************************************************/
+                       /* VARIABLES */
+/***************************************************************/
+
+
+:root {
+
+
+  /* FONTS */
+  --main-font-family: 'Plus Jakarta Sans', sans-serif;
+
+
+  /* FONT WEIGHTS */
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+
+  /* COLORS */
+  --main-light-color: hsl(28, 100%, 97%);
+  --main-nuetral-color: hsl(30, 5%, 45%);
+  --main-dark-color: hsl(0, 0%, 1%);
+
+  --gd-bg-color: hsl(252, 66%, 62%);
+  --uiux-bg-color: hsl(28, 89%, 67%);
+  --apps-bg-color: hsl(0, 78%, 79%);
+  --ill-bg-color: hsl(7, 77%, 66%);
+  --photo-bg-color: hsl(172, 46%, 57%);
+  --mg-bg-color: hsl(314, 45%, 23%);
+
+
+}
+
+
+
+/***************************************************************/
+                       /* MAIN STYLES */
+/***************************************************************/
+
+
+
+/**********************************/
+        /* HTML and BODY */
+/**********************************/
+
+/* html */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* body */
+body {
+  font-family: var(--main-font-family);
+  font-weight: var(--fw-medium);
+}
+
+
+/**********************************/
+            /* BUTTONS */
+/**********************************/
+
+
+/* Shared Button Styles */
+.free-consultation-btn {
+  width: 11rem;
+  height: 2.75rem;
+  border-radius: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  font-weight: var(--fw-bold);
+  color: var(--main-light-color);
+}
+
+
+/* Dark BG */
+.btn-dark {
+  background-color: var(--main-dark-color);
+}
+
+
+/* Bright BG */
+.btn-bright {
+  background-color: var(--ill-bg-color);
+}
+
+
+/**********************************/
+        /* MOBILE STYLES */
+/**********************************/
+
+
+/* Header */
+.header {
+  height: 3rem;
+  margin: 1rem 1rem 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Logo */
+.logo {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../assets/logo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
