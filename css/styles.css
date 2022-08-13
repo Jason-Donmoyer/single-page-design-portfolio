@@ -126,3 +126,325 @@ body {
 }
 
 
+/* Hero */
+.hero {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+
+
+/* Main Headline h1 */
+.main-headline {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.8125rem;
+  font-weight: var(--fw-bold);
+  color: var(--main-dark-color);
+}
+
+
+/* Hero Copy */
+.hero-copy {
+  margin-right: 1.8125rem;
+  margin-left: 1.8125rem;
+  line-height: 1.625rem;
+  color: var(--main-nuetral-color);
+}
+
+
+/* Grid Container */
+.skills-grid-container {
+  /* height: 72.75rem; */
+  margin: 2rem 1rem 0rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  grid-template-areas: "gd-area gd-area"
+                       "uiux-area apps-area"
+                       "ill-area ill-area"
+                       "photo-area photo-area"
+                       "mg-area mg-area";
+}
+
+
+/* Skills Container */
+.skills-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+  border-radius: 0.5rem;
+}
+
+
+/* Skill Image Container */
+.skill-img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* Skill Image */
+.skill-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+/* Skill Copy */
+.skill-copy {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: var(--fw-bold);
+  color: var(--main-light-color);
+}
+
+
+/* Graphic Design Grid Container */
+.gd-container {
+  grid-area: gd-area;
+  height: 22.75rem;
+  background-color: var(--gd-bg-color);
+}
+
+
+/* Graphic Design Image */
+.gd-img {
+  height: 12rem;
+  flex-basis: 8rem;
+  background-image: url(../assets/pattern-graphic-design.svg);
+}
+
+
+/* UI/UX Grid Container */
+.uiux-container {
+  grid-area: uiux-area;
+  height: 11.375rem;
+  background-color: var(--uiux-bg-color);
+}
+
+
+/* UI/UX Image */
+.uiux-img {
+  height: 4rem;
+  flex-basis: 4rem;
+  background-image: url(../assets/pattern-ui-ux.svg);
+}
+
+
+/* Apps Grid Container */
+.apps-container {
+  grid-area: apps-area;
+  height: 11.375rem;
+  background-color: var(--apps-bg-color);
+}
+
+
+/* Apps Image */
+.apps-img {
+  height: 4rem;
+  flex-basis: 4rem;
+  background-image: url(../assets/pattern-apps.svg);
+}
+
+
+/* Illustrations Grid Container */
+.ill-container {
+  grid-area: ill-area;
+  height: 9.875rem;
+  background-color: var(--ill-bg-color);
+}
+
+
+/* Illustrations Image */
+.ill-img {
+  height: 4rem;
+  flex-basis: 8rem;
+  background-image: url(../assets/pattern-illustrations.svg);
+}
+
+
+/* Photography Grid Container */
+.photo-container {
+  grid-area: photo-area;
+  height: 11.375rem;
+  background-color: var(--photo-bg-color);
+}
+
+
+/* Photography Image */
+.photo-img {
+  height: 4rem;
+  flex-basis: 8rem;
+  background-image: url(../assets/pattern-photography.svg);
+}
+
+
+/* Motion Graphics Grid Container */
+.mg-container {
+  grid-area: mg-area;
+  height: 11.375rem;
+  background-color: var(--mg-bg-color);
+}
+
+
+/* Motion Graphics Image */
+.mg-img {
+  height: 4rem;
+  flex-basis: 8rem;
+  background-image: url(../assets/pattern-motion-graphics.svg);
+}
+
+
+/* Main Info Container */
+.main-info-container {
+  margin: 6.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Main Info Image */
+.main-info-img {
+  width: 18.75rem;
+  height: 18.75rem;
+  margin-bottom: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--main-light-color);
+  background-image: url(../assets/image-amy.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Main Info Copy Container */
+.main-info-copy-container {
+  height: 16.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+
+/* Main Info Headline h2*/
+.main-info-headline {
+  font-size: 1.625rem;
+  line-height: 2.0625rem;
+  font-weight: var(--fw-bold);
+  color: var(--main-dark-color);
+}
+
+
+/* Main Info Copy */
+.main-info-copy {
+  line-height: 1.625rem;
+  color: var(--main-nuetral-color);
+}
+
+
+/* Slideshow Container */
+.slideshow-container {
+  height: 21.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Slideshow Headline h3 */
+.slideshow-headline {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: var(--fw-bold);
+  color: var(--main-dark-color);
+}
+
+
+/* Slide */
+.slide {
+  height: 11.25rem;
+  width: 72%;
+  background-color: var(--main-nuetral-color); 
+  border-radius: 0.625rem;
+}
+
+
+/* Slideshow Buttons Container */
+.slideshow-buttons-container {
+  height: 4rem;
+  width: 9rem;
+  /* margin-left: 7.21875rem;
+  margin-right: 7.21875rem; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Slideshow Buttons */
+.ss-btn {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: var(--main-dark-color);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Back Button */
+.back-btn {
+  background-image: url(../assets/icon-arrow-left.svg);
+}
+
+
+/* Forward Button */
+.fwd-btn {
+  background-image: url(../assets/icon-arrow-right.svg);
+}
+
+
+/* Contact Info Container */
+.contact-info-container {
+  height: 22rem;
+  margin: 6.25rem 1rem 2.5rem 1rem;
+  padding: 3.0625rem 1.5rem 3rem 1.5rem;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: var(--main-dark-color);
+  color: var(--main-light-color);
+}
+
+
+/* Contact Info Headline h4 */
+.contact-info-headline {
+  font-size: 1.625rem;
+  line-height: 2.0625rem;
+  font-weight: var(--fw-bold);
+}
+
+
+/* Contact Info Copy */
+.contact-info-copy {
+  line-height: 1.625rem;
+}
+
+
+/* Footer */
+.footer {
+  margin: 0rem 1rem 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
