@@ -356,6 +356,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 
@@ -368,12 +369,71 @@ body {
 }
 
 
+/* Slides Container */
+.slides-container {
+  height: 11.25rem;
+  width: 88.125rem;
+  display: flex;
+  justify-content: center;
+  transition: transform 400ms ease-in;
+  /* position: relative; */
+}
+
+
 /* Slide */
 .slide {
   height: 11.25rem;
-  width: 72%;
+  width: 72vw;
+  margin-left: 0.46875rem;
+  margin-right: 0.46875rem;
+  /* position: relative; */
   background-color: var(--main-nuetral-color); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 0.625rem;
+}
+
+
+/* Slide Hidden */
+.slide-hidden {
+  display: none;
+}
+
+
+/* SLIDES */
+
+
+/* For Animated Transition */
+/* transform: translate3d(20%, 0, 0); */
+/* transition: transform 400ms ease-in-out */
+
+/* Slide Far Left */
+.slide-far-left {
+  background-image: url(../assets/image-slide-1.jpg);
+}
+
+/* Slide Left */
+.slide-left {
+  background-image: url(../assets/image-slide-2.jpg);
+}
+
+
+/* Slide Center */
+.slide-center {
+  background-image: url(../assets/image-slide-3.jpg);
+}
+
+
+/* Slide Right */
+.slide-right {
+  background-image: url(../assets/image-slide-4.jpg);
+}
+
+
+/* Slide Far Right */
+.slide-far-right {
+  background-image: url(../assets/image-slide-5.jpg);
 }
 
 
