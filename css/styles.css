@@ -154,8 +154,7 @@ body {
 
 /* Grid Container */
 .skills-grid-container {
-  /* height: 72.75rem; */
-  margin: 2rem 1rem 0rem 1rem;
+  margin: 0rem 1rem 0rem 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5rem;
@@ -173,7 +172,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: flex-end; */
   border-radius: 0.5rem;
 }
 
@@ -375,29 +373,22 @@ body {
   width: 88.125rem;
   display: flex;
   justify-content: center;
-  transition: transform 400ms ease-in;
-  /* position: relative; */
+  /* transition: transform 400ms ease-in; */
 }
 
 
 /* Slide */
 .slide {
   height: 11.25rem;
+  min-width: 16.875rem;
   width: 72vw;
   margin-left: 0.46875rem;
   margin-right: 0.46875rem;
-  /* position: relative; */
   background-color: var(--main-nuetral-color); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0.625rem;
-}
-
-
-/* Slide Hidden */
-.slide-hidden {
-  display: none;
 }
 
 
@@ -487,8 +478,15 @@ body {
 }
 
 
+/* Contact Info Copy Container */
+.contact-info-copy-container {
+  margin-bottom: 1.5rem;
+}
+
+
 /* Contact Info Headline h4 */
 .contact-info-headline {
+  margin-bottom: 1.5rem;
   font-size: 1.625rem;
   line-height: 2.0625rem;
   font-weight: var(--fw-bold);
@@ -578,8 +576,7 @@ body {
 
   /* Grid Container */
   .skills-grid-container {
-    /* height: 72.75rem; */
-    margin: 4rem 2.4375rem 0rem 2.4375rem;
+    margin: 0rem 2.4375rem 0rem 2.4375rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "gd-area gd-area uiux-area apps-area"
                         "gd-area gd-area ill-area ill-area"
@@ -650,7 +647,8 @@ body {
   /* Slide */
   .slide {
     height: 22.5rem;
-    width: 72vw;
+    min-width: 33.75rem;
+    width: 70vw;
     margin-left: 0.9375rem;
     margin-right: 0.9375rem;
   }
@@ -663,8 +661,15 @@ body {
   }
 
 
+  /* Contact Info Copy Container */
+  .contact-info-copy-container {
+    margin-bottom: 1.625rem;
+  }
+
+
   /* Contact Info Headline h4 */
   .contact-info-headline {
+    margin-bottom: 1.625rem;
     font-size: 2rem;
     line-height: 2.5rem;
   }
@@ -680,11 +685,167 @@ body {
   /* Footer */
   .footer {
     margin: 0rem 2.46875rem 3.5rem 2.46875rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 
+}
+
+
+/***************************************************************/
+        
+/***************************************************************/
+
+
+/* DESKTOP */
+/* 1280px */
+
+
+@media screen and (min-width: 1280px) {
+
+
+  /* Header */
+  .header {
+    margin-left: 10.28125rem;
+    margin-right: 10.28125rem;
+  }  
+
+
+  /* Hero */
+  .hero {
+    max-width: 47rem;
+    margin: 4.125rem auto 5rem auto;
+  }
+
+
+  /* Main Headline h1 */
+  .main-headline {
+    margin-bottom: 1.4375rem;
+    font-size: 3.5rem;
+    line-height: 4.4375rem;
+  }
+
+
+  /* Hero Copy */
+  .hero-copy {
+    margin-right: 0.6875rem;
+    margin-left: 0.6875rem;
+  }
+
+
+  /* Grid Container */
+  .skills-grid-container {
+    max-width: 69.375rem;
+    margin: 0rem auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "gd-area gd-area uiux-area apps-area photo-area photo-area"
+                        "gd-area gd-area ill-area ill-area mg-area mg-area";
+  }
+
+
+  /* UI/UX Grid Container */
+  /* Apps Grid Container */
+  /* Photography Grid Container */
+  .uiux-container,
+  .apps-container,
+  .photo-container {
+    height: 11.375rem;
+  }
+  
+
+  /* Illustration Grid Container */
+  /* Motion Graphics Grid Container */
+  .ill-container,
+  .mg-container {
+    height: 9.875rem;
+  }
+
+
+  /* Main Info Container */
+  .main-info-container {
+    max-width: 69.375rem;
+    margin: 8.5rem auto 5.5rem auto;
+  }
+
+
+  /* Main Info Image */
+  .main-info-img {
+    width: 27.8125rem;
+    height: 27.8125rem;
+    position: initial;
+    left: 0px;
+  }
+
+
+  /* Main Info Copy Container */
+  .main-info-copy-container {
+    height: 19.125rem;
+    flex-basis: 33.75rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+
+  /* Main Info Headline h2*/
+  .main-info-headline {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+  }
+
+
+  /* Contact Info Container */
+  .contact-info-container {
+    max-width: 69.375rem;
+    margin: 5.5rem auto 3.5rem auto;
+    padding: 5.0625rem 5.9375rem 5rem 4.0625rem;
+    flex-direction: row;
+  }
+
+
+  /* Contact Info Copy Container */
+  .contact-info-copy-container {
+    max-width: 33.75rem;
+    margin-bottom: 0rem;
+    text-align: left;
+  }
+
+
+  /* Contact Info Headline h4 */
+  .contact-info-headline {
+    margin-bottom: 1.5625rem;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+  }
+
+
+  /* Footer */
+  .footer {
+    max-width: 69.4375rem;
+    margin: 0rem auto 4rem auto;
+  }
+
+
+  /* ACTIVE STATES */
+
+
+  /* Free Consultation Button */
+  /* Slideshow Buttons */
+  .free-consultation-btn:hover,
+  .ss-btn:hover {
+    cursor: pointer;
+  }
+
+
+  /* Button Dark BG */
+  /* Slideshow Buttons */
+  .btn-dark:hover,
+  .ss-btn:hover {
+    background-color: var(--gd-bg-color);
+  }
+
+
+  /* Button Bright BG */
+  .btn-bright:hover {
+    background-color: var(--uiux-bg-color);
+  }
 
 
 }

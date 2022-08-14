@@ -17,28 +17,15 @@ const slide5 = document.getElementById('slide-5');
 let slidesArr = [slide1, slide2, slide3, slide4, slide5];
 
 
-
 // Event Listeners to Change Slides
 
-let amount = 20;
-let initial = 0;
 // Back Button
 backBtn.addEventListener('click', () => {
   // slidesContainer.style.transform = 'translate3d(20%, 0, 0)';
-  // slidesContainer.style.transformOrigin += '20%';
   let lastEle = slidesArr.pop();
   slidesArr.unshift(lastEle);
   slidesArr.forEach(e => slidesContainer.appendChild(e));
-  // requestAnimationFrame(() => slidesContainer.style.transform = 'translate3d(20%, 0, 0)');
-  // slidesContainer.style.transform = 'translate3d(20%, 0, 0)';
-  // initial += amount;
 });
-
-
-
-// backBtn.addEventListener('transitionrun', () => {
-//   slidesContainer.style.transform = 'translate3d(20%, 0, 0)';
-// } );
 
 // Forward Button
 fwdBtn.addEventListener('click', () => {
