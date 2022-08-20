@@ -28,6 +28,7 @@
   --main-light-color: hsl(28, 100%, 97%);
   --main-nuetral-color: hsl(30, 5%, 45%);
   --main-dark-color: hsl(0, 0%, 1%);
+  --main-bg-color: hsl(30, 100%, 97%);
 
   --gd-bg-color: hsl(252, 66%, 62%);
   --uiux-bg-color: hsl(28, 89%, 67%);
@@ -65,6 +66,7 @@ html {
 body {
   font-family: var(--main-font-family);
   font-weight: var(--fw-medium);
+  background-color: var(--main-bg-color);
 }
 
 
@@ -794,6 +796,7 @@ body {
   /* Contact Info Container */
   .contact-info-container {
     max-width: 69.375rem;
+    height: 20rem;
     margin: 5.5rem auto 3.5rem auto;
     padding: 5.0625rem 5.9375rem 5rem 4.0625rem;
     flex-direction: row;
